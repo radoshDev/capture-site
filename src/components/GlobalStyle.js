@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 	html {
 		font-size: 14px;
+		font-family: 'Inter', sans-serif;
 	}
 	body {
 		background: #1b1b1b;
@@ -34,8 +35,11 @@ const GlobalStyle = createGlobalStyle`
 			color: #23d997;
 		}
 	}
+	h4 {
+		font-size: 2rem;
+	}
 	a {
-		font-size: 1.1rem;
+		font-size: inherit;
 	}
 	p {
 		padding: 3rem 0;

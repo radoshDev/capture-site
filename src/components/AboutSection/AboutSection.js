@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import home1 from "../img/home1.png";
+import home1 from "../../img/home1.png";
+import { ContainerDiv, DescriptionDiv, ImageDiv } from "../../style";
+
 const AboutSection = () => {
 	return (
-		<About>
-			<Description>
+		<ContainerDiv>
+			<DescriptionDiv>
 				<div className="title">
 					<Hide>
 						<h2>We work to made</h2>
@@ -23,35 +25,14 @@ const AboutSection = () => {
 					have professionals with amazing skills.
 				</p>
 				<button>Contact Us</button>
-			</Description>
-			<Image>
+			</DescriptionDiv>
+			<ImageDiv>
 				<img src={home1} alt="A man with camera" />
-			</Image>
-		</About>
+			</ImageDiv>
+		</ContainerDiv>
 	);
 };
 
-const About = styled.div`
-	color: white;
-	min-height: 90vh;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 5rem 10rem;
-`;
-const Description = styled.div`
-	flex: 1;
-	padding-right: 5rem;
-`;
-const Image = styled.div`
-	flex: 1;
-	overflow: hidden;
-	img {
-		width: 100%;
-		height: 80vh;
-		object-fit: cover;
-	}
-`;
 const Hide = styled.div`
 	overflow: hidden;
 `;
