@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const ContainerDiv = styled.div`
 	color: white;
@@ -12,10 +12,11 @@ export const ContainerDiv = styled.div`
 `;
 
 export const DescriptionDiv = styled.div`
-	/* padding-right: 5rem; */
+	z-index: 2;
 `;
 export const ImageDiv = styled.div`
 	overflow: hidden;
+	z-index: 2;
 	img {
 		width: 100%;
 		height: 80vh;

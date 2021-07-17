@@ -1,5 +1,6 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
+import Line from "../common/Line";
 
 const Question = ({ title }) => {
 	return (
@@ -13,7 +14,7 @@ const Question = ({ title }) => {
 					corporis.
 				</p>
 			</div>
-			<hr className="faq-line" />
+			<Line highness="0.2rem" margin="2rem 0" />
 		</QuestionDiv>
 	);
 };

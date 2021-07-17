@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
 	* {
 		margin: 0;
 		padding: 0;
+		box-sizing: border-box;
 	}
 	html {
 		font-size: 14px;
@@ -46,6 +47,9 @@ const GlobalStyle = createGlobalStyle`
 		color: #ccc;
 		font-size: 1.4rem;
 		line-height: 150%;
+	}
+	hr {
+		border: none;
 	}
 `;
 
