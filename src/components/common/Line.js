@@ -5,6 +5,7 @@ import styled from "styled-components/macro";
 const Line = (props) => {
 	return <StyledLine variants={props.variants} {...props} />;
 };
+
 const StyledLine = styled(motion.hr)`
 	background: ${(p) => p.background || "#ccc"};
 	height: ${(p) => p.highness || "2px"};

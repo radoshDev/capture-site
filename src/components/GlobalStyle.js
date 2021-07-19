@@ -9,10 +9,14 @@ const GlobalStyle = createGlobalStyle`
 	html {
 		font-size: 14px;
 		font-family: 'Inter', sans-serif;
+		@media screen and (max-width: 1500px) {
+			font-size: 80%;
+		}
 	}
 	body {
 		background: #1b1b1b;
 		color: white;
+		overflow-x: hidden;
 	}
 	button {
 		font-weight: bold;

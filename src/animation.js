@@ -84,8 +84,21 @@ export const sliderAnimation = {
 		x: "100%",
 		skew: "0deg",
 		transition: {
-			duration: 1,
+			duration: 0.5,
 			ease: "easeOut",
 		},
+	},
+};
+
+export const scrollRevealAnimation = {
+	hidden: {
+		opacity: 0,
+		scale: 1.2,
+		transition: { duration: 0.5 },
+	},
+	show: {
+		opacity: 1,
+		scale: 1,
+		transition: { duration: 0.5 },
 	},
 };

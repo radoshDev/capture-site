@@ -5,6 +5,7 @@ import { movieState } from "../movieState";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import Frame from "../components/common/Frame";
+import { ScrollTop } from "../components/common/ScrollTop";
 
 const OurWork = () => {
 	const movies = movieState();
@@ -20,14 +21,16 @@ const OurWork = () => {
 				<Frame background={color} key={color + i} />
 			))}
 			{movies &&
-				movies.map((movie) => (
+				movies.map((movie, i) => (
 					<Movie
 						title={movie.title}
 						imgSrc={movie.mainImg}
 						link={movie.url}
+						index={i}
 						key={movie.id}
 					/>
 				))}
+			<ScrollTop />
 		</WorkDiv>
 	);
 };
